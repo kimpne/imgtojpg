@@ -12,6 +12,8 @@ import Crop from "@/pages/crop";
 import Privacy from "@/pages/privacy";
 import Terms from "@/pages/terms";
 import About from "@/pages/about";
+import WhyConvert from "@/pages/why-convert";
+import PngVsJpg from "@/pages/png-vs-jpg";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -24,6 +26,8 @@ function Router() {
       <Route path="/privacy" component={Privacy} />
       <Route path="/terms" component={Terms} />
       <Route path="/about" component={About} />
+      <Route path="/why-convert" component={WhyConvert} />
+      <Route path="/png-vs-jpg" component={PngVsJpg} />
       <Route component={NotFound} />
     </Switch>
   );
