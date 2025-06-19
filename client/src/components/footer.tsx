@@ -1,4 +1,8 @@
+import { useLanguage } from "@/contexts/language-context";
+
 export default function Footer() {
+  const { t } = useLanguage();
+  
   return (
     <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-16 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -11,43 +15,43 @@ export default function Footer() {
               <span className="font-semibold text-gray-900 dark:text-white">ImageConverter</span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              무료 이미지 변환 및 편집 도구로 모든 이미지 작업을 간편하게 처리하세요.
+              {t('footer.description')}
             </p>
           </div>
           
           <div>
-            <h5 className="font-semibold text-gray-900 dark:text-white mb-3">변환 도구</h5>
+            <h5 className="font-semibold text-gray-900 dark:text-white mb-3">{t('footer.conversionTools')}</h5>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <li><a href="#" className="hover:text-primary-custom transition-colors">JPG 변환</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">PNG 변환</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">WEBP 변환</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">PDF 변환</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.jpgConvert')}</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.pngConvert')}</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.webpConvert')}</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.pdfConvert')}</a></li>
             </ul>
           </div>
           
           <div>
-            <h5 className="font-semibold text-gray-900 dark:text-white mb-3">편집 도구</h5>
+            <h5 className="font-semibold text-gray-900 dark:text-white mb-3">{t('footer.editTools')}</h5>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <li><a href="#" className="hover:text-primary-custom transition-colors">이미지 압축</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">크기 조정</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">자르기</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">회전</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.imageCompress')}</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.resize')}</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.crop')}</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.rotate')}</a></li>
             </ul>
           </div>
           
           <div>
-            <h5 className="font-semibold text-gray-900 dark:text-white mb-3">지원</h5>
+            <h5 className="font-semibold text-gray-900 dark:text-white mb-3">{t('footer.support')}</h5>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <li><a href="#" className="hover:text-primary-custom transition-colors">도움말</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">문의하기</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">개인정보처리방침</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">이용약관</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.help')}</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.contact')}</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.privacy')}</a></li>
+              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.terms')}</a></li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-sm text-gray-600 dark:text-gray-400">
-          <p>&copy; 2024 ImageConverter. All rights reserved.</p>
+          <p>{t('footer.copyright')}</p>
         </div>
       </div>
     </footer>

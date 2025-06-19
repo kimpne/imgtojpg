@@ -90,6 +90,25 @@ const translations = {
     "features.batchDesc": "여러 파일을 한 번에 변환할 수 있습니다",
     "features.free": "완전 무료",
     "features.freeDesc": "서버에 업로드 없이 브라우저에서 처리됩니다",
+    
+    // Footer
+    "footer.description": "무료 이미지 변환 및 편집 도구로 모든 이미지 작업을 간편하게 처리하세요.",
+    "footer.conversionTools": "변환 도구",
+    "footer.jpgConvert": "JPG 변환",
+    "footer.pngConvert": "PNG 변환",
+    "footer.webpConvert": "WEBP 변환",
+    "footer.pdfConvert": "PDF 변환",
+    "footer.editTools": "편집 도구",
+    "footer.imageCompress": "이미지 압축",
+    "footer.resize": "크기 조정",
+    "footer.crop": "자르기",
+    "footer.rotate": "회전",
+    "footer.support": "지원",
+    "footer.help": "도움말",
+    "footer.contact": "문의하기",
+    "footer.privacy": "개인정보처리방침",
+    "footer.terms": "이용약관",
+    "footer.copyright": "© 2024 ImageConverter. All rights reserved.",
   },
   en: {
     // Header
@@ -172,6 +191,25 @@ const translations = {
     "features.batchDesc": "Convert multiple files at once",
     "features.free": "Completely Free",
     "features.freeDesc": "Processed in your browser without server upload",
+    
+    // Footer
+    "footer.description": "Free image conversion and editing tools to handle all your image processing needs easily.",
+    "footer.conversionTools": "Conversion Tools",
+    "footer.jpgConvert": "JPG Convert",
+    "footer.pngConvert": "PNG Convert",
+    "footer.webpConvert": "WEBP Convert",
+    "footer.pdfConvert": "PDF Convert",
+    "footer.editTools": "Edit Tools",
+    "footer.imageCompress": "Image Compression",
+    "footer.resize": "Resize",
+    "footer.crop": "Crop",
+    "footer.rotate": "Rotate",
+    "footer.support": "Support",
+    "footer.help": "Help",
+    "footer.contact": "Contact",
+    "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms of Service",
+    "footer.copyright": "© 2024 ImageConverter. All rights reserved.",
   }
 };
 
