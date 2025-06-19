@@ -19,12 +19,15 @@ export default function Header() {
             <Link href="/" className="text-gray-600 hover:text-primary-custom transition-colors">
               변환 도구
             </Link>
-            <a href="#" className="text-gray-600 hover:text-primary-custom transition-colors">
+            <Link href="/compress" className="text-gray-600 hover:text-primary-custom transition-colors">
               압축
-            </a>
-            <a href="#" className="text-gray-600 hover:text-primary-custom transition-colors">
-              편집
-            </a>
+            </Link>
+            <Link href="/resize" className="text-gray-600 hover:text-primary-custom transition-colors">
+              이미지크기조절
+            </Link>
+            <Link href="/crop" className="text-gray-600 hover:text-primary-custom transition-colors">
+              이미지 잘라내기
+            </Link>
             <a href="#" className="text-gray-600 hover:text-primary-custom transition-colors">
               도움말
             </a>

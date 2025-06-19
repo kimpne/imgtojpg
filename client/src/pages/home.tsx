@@ -15,6 +15,12 @@ export default function Home() {
 
   const handleFilesAdded = (newFiles: FileItem[]) => {
     setSelectedFiles(prev => [...prev, ...newFiles]);
+    
+    // Show confirmation toast
+    toast({
+      title: "이미지가 선택되었습니다",
+      description: "아래에서 이미지를 확인후 모두변환을 눌러주세요",
+    });
   };
 
   const handleRemoveFile = (fileId: string) => {
@@ -126,8 +132,11 @@ export default function Home() {
         {/* File Upload Area */}
         <div className="space-y-6">
           <FileUpload onFilesAdded={handleFilesAdded} />
-          
-          {selectedFiles.length > 0 && (
+        </div>
+
+        {/* Selected Files Display directly below the description */}
+        {selectedFiles.length > 0 && (
+          <div className="mt-8">
             <FileList
               files={selectedFiles}
               onRemoveFile={handleRemoveFile}
@@ -135,15 +144,18 @@ export default function Home() {
               onConvertAll={handleConvertAll}
               onClearAll={handleClearAll}
             />
-          )}
-          
-          {convertedFiles.length > 0 && (
+          </div>
+        )}
+        
+        {/* Conversion Results */}
+        {convertedFiles.length > 0 && (
+          <div className="mt-6">
             <ConversionResults
               convertedFiles={convertedFiles}
               onDownloadAll={handleDownloadAll}
             />
-          )}
-        </div>
+          </div>
+        )}
 
         {/* Features Section */}
         <div className="grid md:grid-cols-3 gap-6 mb-8 mt-12">
