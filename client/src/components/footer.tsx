@@ -23,19 +23,19 @@ export default function Footer() {
           <div>
             <h5 className="font-semibold text-gray-900 dark:text-white mb-3">{t('footer.conversionTools')}</h5>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.jpgConvert')}</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.pngConvert')}</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.webpConvert')}</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.pdfConvert')}</a></li>
+              <li><Link href="/" className="hover:text-primary-custom transition-colors">{t('footer.jpgConvert')}</Link></li>
+              <li><Link href="/" className="hover:text-primary-custom transition-colors">{t('footer.pngConvert')}</Link></li>
+              <li><Link href="/" className="hover:text-primary-custom transition-colors">{t('footer.webpConvert')}</Link></li>
+              <li><Link href="/" className="hover:text-primary-custom transition-colors">{t('footer.pdfConvert')}</Link></li>
             </ul>
           </div>
           
           <div>
             <h5 className="font-semibold text-gray-900 dark:text-white mb-3">{t('footer.editTools')}</h5>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.imageCompress')}</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.resize')}</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.crop')}</a></li>
+              <li><Link href="/compress" className="hover:text-primary-custom transition-colors">{t('footer.imageCompress')}</Link></li>
+              <li><Link href="/resize" className="hover:text-primary-custom transition-colors">{t('footer.resize')}</Link></li>
+              <li><Link href="/crop" className="hover:text-primary-custom transition-colors">{t('footer.crop')}</Link></li>
               <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.rotate')}</a></li>
             </ul>
           </div>
