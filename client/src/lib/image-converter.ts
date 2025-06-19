@@ -66,10 +66,11 @@ export class ImageConverter {
       'image/bmp',
       'image/tiff',
       'image/webp',
-      'image/svg+xml'
+      'image/svg+xml',
+      'application/pdf'
     ];
     
-    return validTypes.includes(file.type) && file.size <= 10 * 1024 * 1024; // 10MB limit
+    return validTypes.includes(file.type) && file.size <= 50 * 1024 * 1024; // 50MB limit
   }
   
   static generatePreview(file: File): Promise<string> {

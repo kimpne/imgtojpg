@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { FileItem, ConvertedFile } from "@/types/file";
 import { ImageConverter } from "@/lib/image-converter";
+import { PDFConverter } from "@/lib/pdf-converter";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/language-context";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import FileUpload from "@/components/file-upload";
@@ -12,14 +14,15 @@ export default function Home() {
   const [selectedFiles, setSelectedFiles] = useState<FileItem[]>([]);
   const [convertedFiles, setConvertedFiles] = useState<ConvertedFile[]>([]);
   const { toast } = useToast();
+  const { t } = useLanguage();
 
   const handleFilesAdded = (newFiles: FileItem[]) => {
     setSelectedFiles(prev => [...prev, ...newFiles]);
     
     // Show confirmation toast
     toast({
-      title: "이미지가 선택되었습니다",
-      description: "아래에서 이미지를 확인후 모두변환을 눌러주세요",
+      title: t('toast.filesSelected'),
+      description: t('toast.checkAndConvert'),
     });
   };
 
@@ -37,8 +40,18 @@ export default function Home() {
     );
 
     try {
-      const convertedBlob = await ImageConverter.convertToJPG(fileItem.file);
-      const convertedName = fileItem.file.name.replace(/\.[^/.]+$/, '.jpg');
+      let convertedBlob: Blob;
+      let convertedName: string;
+
+      if (fileItem.file.type === 'application/pdf') {
+        // Convert PDF to JPG
+        convertedBlob = await PDFConverter.convertPDFToSingleJPG(fileItem.file);
+        convertedName = fileItem.file.name.replace(/\.pdf$/i, '.jpg');
+      } else {
+        // Convert image to JPG
+        convertedBlob = await ImageConverter.convertToJPG(fileItem.file);
+        convertedName = fileItem.file.name.replace(/\.[^/.]+$/, '.jpg');
+      }
       
       const convertedFile: ConvertedFile = {
         id: fileItem.id,
@@ -57,7 +70,7 @@ export default function Home() {
       );
 
       toast({
-        title: "변환 완료",
+        title: t('toast.conversionComplete'),
         description: `${fileItem.file.name}이(가) JPG로 변환되었습니다.`,
       });
 
@@ -71,7 +84,7 @@ export default function Home() {
       );
 
       toast({
-        title: "변환 실패",
+        title: t('toast.conversionFailed'),
         description: `${fileItem.file.name} 변환 중 오류가 발생했습니다.`,
         variant: "destructive"
       });
@@ -103,8 +116,8 @@ export default function Home() {
     setConvertedFiles([]);
     
     toast({
-      title: "모든 파일 제거됨",
-      description: "선택된 파일과 변환 결과가 모두 제거되었습니다.",
+      title: t('toast.filesCleared'),
+      description: t('toast.filesClearedDesc'),
     });
   };
 
@@ -113,7 +126,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
       <Header />
       
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -122,10 +135,9 @@ export default function Home() {
           <div className="w-16 h-16 bg-primary-custom rounded-2xl flex items-center justify-center mx-auto mb-4">
             <i className="fas fa-file-image text-white text-2xl"></i>
           </div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">이미지를 JPG로 변환</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            PNG, BMP, GIF, TIFF, WEBP 등 다양한 이미지 형식을 고품질 JPG로 변환하세요. 
-            빠르고 안전하며 완전 무료입니다.
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">{t('home.title')}</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            {t('home.subtitle')}
           </p>
         </div>
 
@@ -159,34 +171,34 @@ export default function Home() {
 
         {/* Features Section */}
         <div className="grid md:grid-cols-3 gap-6 mb-8 mt-12">
-          <div className="bg-white rounded-xl shadow-sm p-6 text-center">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6 text-center transition-colors">
             <img 
               src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=150" 
               alt="Fast conversion" 
               className="mx-auto w-16 h-16 object-cover rounded-lg mb-4" 
             />
-            <h4 className="font-semibold text-gray-900 mb-2">빠른 변환</h4>
-            <p className="text-gray-600 text-sm">클라이언트 측에서 처리되어 빠르고 안전합니다</p>
+            <h4 className="font-semibold text-gray-900 dark:text-white mb-2">{t('features.fast')}</h4>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">{t('features.fastDesc')}</p>
           </div>
           
-          <div className="bg-white rounded-xl shadow-sm p-6 text-center">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6 text-center transition-colors">
             <img 
               src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=150" 
               alt="Batch processing" 
               className="mx-auto w-16 h-16 object-cover rounded-lg mb-4" 
             />
-            <h4 className="font-semibold text-gray-900 mb-2">일괄 처리</h4>
-            <p className="text-gray-600 text-sm">여러 파일을 한 번에 변환할 수 있습니다</p>
+            <h4 className="font-semibold text-gray-900 dark:text-white mb-2">{t('features.batch')}</h4>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">{t('features.batchDesc')}</p>
           </div>
           
-          <div className="bg-white rounded-xl shadow-sm p-6 text-center">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6 text-center transition-colors">
             <img 
               src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=150" 
               alt="Privacy and security" 
               className="mx-auto w-16 h-16 object-cover rounded-lg mb-4" 
             />
-            <h4 className="font-semibold text-gray-900 mb-2">완전 무료</h4>
-            <p className="text-gray-600 text-sm">서버에 업로드 없이 브라우저에서 처리됩니다</p>
+            <h4 className="font-semibold text-gray-900 dark:text-white mb-2">{t('features.free')}</h4>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">{t('features.freeDesc')}</p>
           </div>
         </div>
       </main>
