@@ -49,12 +49,29 @@ export default function About() {
 
             <section>
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                {t('about.why.title')}
+              </h2>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 ml-4">
+                <li><strong>JPG</strong>: {t('about.why.jpg')}</li>
+                <li><strong>PNG</strong>: {t('about.why.png')}</li>
+                <li>{t('about.why.optimization')}</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                 {t('about.contact.title')}
               </h2>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 {t('about.contact.content')}
               </p>
             </section>
+          </div>
+          
+          <div className="mt-8 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+            <p className="text-gray-700 dark:text-gray-300 text-center">
+              {t('about.closing')}
+            </p>
           </div>
         </div>
       </main>

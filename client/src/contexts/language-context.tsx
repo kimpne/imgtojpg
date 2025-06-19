@@ -171,6 +171,13 @@ const translations = {
     "about.technology.content": "최신 웹 기술을 활용하여 브라우저에서 직접 이미지 처리를 수행합니다. HTML5 Canvas API와 JavaScript를 사용하여 서버 없이도 고품질 이미지 변환이 가능하며, 사용자의 개인정보와 파일이 외부로 전송되지 않습니다.",
     "about.contact.title": "문의사항",
     "about.contact.content": "서비스 이용 중 문의사항이나 개선 제안이 있으시면 언제든지 연락해 주세요. 사용자 피드백을 통해 더 나은 서비스를 제공하겠습니다.",
+    
+    // About Additional Content
+    "about.why.title": "왜 JPG로 변환해야 할까요?",
+    "about.why.jpg": "JPG는 용량이 작고 웹에서 호환성이 높습니다.",
+    "about.why.png": "PNG는 고화질과 투명도를 지원하지만 파일 크기가 큽니다.",
+    "about.why.optimization": "필요에 따라 파일 포맷을 적절히 변환하면 웹페이지 최적화와 저장 공간 절약이 가능합니다.",
+    "about.closing": "간단한 변환이 필요할 때, 이 사이트를 활용해보세요 😊",
   },
   en: {
     // Header
@@ -334,6 +341,13 @@ const translations = {
     "about.technology.content": "Using cutting-edge web technologies to perform image processing directly in the browser. Using HTML5 Canvas API and JavaScript, high-quality image conversion is possible without servers, and user privacy and files are not transmitted externally.",
     "about.contact.title": "Contact",
     "about.contact.content": "If you have any questions or suggestions for improvement while using the service, please contact us anytime. We will provide better service through user feedback.",
+    
+    // About Additional Content
+    "about.why.title": "Why should you convert to JPG?",
+    "about.why.jpg": "JPG has a small file size and high compatibility on the web.",
+    "about.why.png": "PNG supports high quality and transparency but has a larger file size.",
+    "about.why.optimization": "Converting file formats appropriately as needed enables webpage optimization and storage space savings.",
+    "about.closing": "Use this site when you need simple conversions 😊",
   }
 };
 
