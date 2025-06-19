@@ -156,6 +156,21 @@ const translations = {
     "faq.a2": "A. 브라우저 성능에 따라 다르지만, 일반적으로 50MB 이하의 파일이 원활하게 처리됩니다.",
     "faq.q3": "Q. 여러 이미지를 한꺼번에 변환할 수 있나요?",
     "faq.a3": "A. 네, 다중 업로드 및 일괄 변환을 지원합니다.",
+    
+    // About Page
+    "about.title": "소개",
+    "about.mission.title": "우리의 미션",
+    "about.mission.content": "ImageConverter는 사용자의 개인정보를 보호하면서도 강력한 이미지 처리 기능을 제공하는 것을 목표로 합니다. 모든 처리는 클라이언트 측에서 이루어져 완전히 안전하고 빠른 이미지 변환 경험을 제공합니다.",
+    "about.features.title": "주요 기능",
+    "about.features.item1": "다양한 이미지 형식을 JPG로 변환 (PNG, BMP, GIF, TIFF, WEBP, PDF)",
+    "about.features.item2": "이미지 압축으로 파일 크기 최적화",
+    "about.features.item3": "이미지 크기 조절 및 비율 맞춤",
+    "about.features.item4": "다양한 비율로 이미지 자르기",
+    "about.features.item5": "일괄 처리로 여러 파일 동시 변환",
+    "about.technology.title": "기술적 특징",
+    "about.technology.content": "최신 웹 기술을 활용하여 브라우저에서 직접 이미지 처리를 수행합니다. HTML5 Canvas API와 JavaScript를 사용하여 서버 없이도 고품질 이미지 변환이 가능하며, 사용자의 개인정보와 파일이 외부로 전송되지 않습니다.",
+    "about.contact.title": "문의사항",
+    "about.contact.content": "서비스 이용 중 문의사항이나 개선 제안이 있으시면 언제든지 연락해 주세요. 사용자 피드백을 통해 더 나은 서비스를 제공하겠습니다.",
   },
   en: {
     // Header
@@ -304,6 +319,21 @@ const translations = {
     "faq.a2": "A. It depends on browser performance, but generally files under 50MB are processed smoothly.",
     "faq.q3": "Q. Can I convert multiple images at once?",
     "faq.a3": "A. Yes, we support multiple uploads and batch conversion.",
+    
+    // About Page
+    "about.title": "About",
+    "about.mission.title": "Our Mission",
+    "about.mission.content": "ImageConverter aims to provide powerful image processing capabilities while protecting user privacy. All processing is done client-side to provide a completely safe and fast image conversion experience.",
+    "about.features.title": "Key Features",
+    "about.features.item1": "Convert various image formats to JPG (PNG, BMP, GIF, TIFF, WEBP, PDF)",
+    "about.features.item2": "Image compression for file size optimization",
+    "about.features.item3": "Image resizing and aspect ratio adjustment",
+    "about.features.item4": "Image cropping with various ratios",
+    "about.features.item5": "Batch processing for multiple file conversion",
+    "about.technology.title": "Technical Features",
+    "about.technology.content": "Using cutting-edge web technologies to perform image processing directly in the browser. Using HTML5 Canvas API and JavaScript, high-quality image conversion is possible without servers, and user privacy and files are not transmitted externally.",
+    "about.contact.title": "Contact",
+    "about.contact.content": "If you have any questions or suggestions for improvement while using the service, please contact us anytime. We will provide better service through user feedback.",
   }
 };
 
