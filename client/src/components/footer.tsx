@@ -45,8 +45,8 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <li><Link href="/about" className="hover:text-primary-custom transition-colors">{t('about.title')}</Link></li>
               <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.contact')}</a></li>
-              <li><a href="/privacy.html" target="_blank" className="hover:text-primary-custom transition-colors">{t('footer.privacy')}</a></li>
-              <li><a href="/terms.html" target="_blank" className="hover:text-primary-custom transition-colors">{t('footer.terms')}</a></li>
+              <li><a href="/privacy.html" className="hover:text-primary-custom transition-colors">{t('footer.privacy')}</a></li>
+              <li><a href="/terms.html" className="hover:text-primary-custom transition-colors">{t('footer.terms')}</a></li>
             </ul>
           </div>
         </div>
