@@ -139,6 +139,14 @@ const translations = {
     "terms.section5.title": "5. 서비스 중단 및 변경",
     "terms.section5.content": "운영자는 서비스의 일부 또는 전부를 사전 통지 없이 변경하거나 종료할 수 있습니다.",
     "terms.effectiveDate": "본 약관은 2024년 6월 19일부터 적용됩니다.",
+    
+    // JPG Tool Introduction
+    "intro.title": "JPG 변환 도구란?",
+    "intro.description": "PNG, BMP, GIF, WEBP 등 다양한 이미지 포맷을 브라우저에서 바로 JPG로 변환할 수 있는 무료 온라인 도구입니다. 서버에 파일이 저장되지 않기 때문에 개인정보 걱정 없이 빠르고 안전하게 사용할 수 있습니다.",
+    "intro.howToUse": "사용 방법",
+    "intro.step1": "파일을 업로드하거나 드래그 & 드롭합니다.",
+    "intro.step2": "미리보기를 확인한 후 '변환' 버튼을 클릭합니다.",
+    "intro.step3": "변환된 JPG 파일이 자동 다운로드 됩니다.",
   },
   en: {
     // Header
@@ -270,6 +278,14 @@ const translations = {
     "terms.section5.title": "5. Service Interruption and Changes",
     "terms.section5.content": "The operator may change or terminate part or all of the service without prior notice.",
     "terms.effectiveDate": "These terms are effective from June 19, 2024.",
+    
+    // JPG Tool Introduction
+    "intro.title": "What is JPG Conversion Tool?",
+    "intro.description": "A free online tool that can convert various image formats like PNG, BMP, GIF, WEBP directly to JPG in your browser. Since files are not stored on servers, you can use it quickly and safely without privacy concerns.",
+    "intro.howToUse": "How to Use",
+    "intro.step1": "Upload files or drag & drop them.",
+    "intro.step2": "Check the preview and click the 'Convert' button.",
+    "intro.step3": "Converted JPG files will be automatically downloaded.",
   }
 };
 
