@@ -14,6 +14,8 @@ import Terms from "@/pages/terms";
 import About from "@/pages/about";
 import WhyConvert from "@/pages/why-convert";
 import PngVsJpg from "@/pages/png-vs-jpg";
+import CompressionGuide from "@/pages/compression-guide";
+import WebOptimization from "@/pages/web-optimization";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -28,6 +30,8 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/why-convert" component={WhyConvert} />
       <Route path="/png-vs-jpg" component={PngVsJpg} />
+      <Route path="/compression-guide" component={CompressionGuide} />
+      <Route path="/web-optimization" component={WebOptimization} />
       <Route component={NotFound} />
     </Switch>
   );
