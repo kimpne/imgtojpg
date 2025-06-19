@@ -178,6 +178,12 @@ const translations = {
     "about.why.png": "PNG는 고화질과 투명도를 지원하지만 파일 크기가 큽니다.",
     "about.why.optimization": "필요에 따라 파일 포맷을 적절히 변환하면 웹페이지 최적화와 저장 공간 절약이 가능합니다.",
     "about.closing": "간단한 변환이 필요할 때, 이 사이트를 활용해보세요 😊",
+    
+    // Additional Navigation
+    "nav.whyConvert": "JPG 변환이유",
+    "nav.pngVsJpg": "PNG vs JPG",
+    "nav.compressionGuide": "압축 팁",
+    "nav.webOptimization": "웹 최적화",
   },
   en: {
     // Header
@@ -348,6 +354,12 @@ const translations = {
     "about.why.png": "PNG supports high quality and transparency but has a larger file size.",
     "about.why.optimization": "Converting file formats appropriately as needed enables webpage optimization and storage space savings.",
     "about.closing": "Use this site when you need simple conversions 😊",
+    
+    // Additional Navigation
+    "nav.whyConvert": "Why Convert JPG",
+    "nav.pngVsJpg": "PNG vs JPG",
+    "nav.compressionGuide": "Compression Tips",
+    "nav.webOptimization": "Web Optimization",
   }
 };
 

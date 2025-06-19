@@ -22,22 +22,28 @@ export default function Header() {
             </div>
           </Link>
           
-          <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors">
+          <nav className="hidden lg:flex items-center space-x-4">
+            <Link href="/" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
               {t('header.convert')}
             </Link>
-            <Link href="/compress" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors">
+            <Link href="/compress" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
               {t('header.compress')}
             </Link>
-            <Link href="/resize" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors">
+            <Link href="/resize" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
               {t('header.resize')}
             </Link>
-            <Link href="/crop" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors">
+            <Link href="/crop" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
               {t('header.crop')}
             </Link>
-            <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors">
-              {t('header.help')}
+            <a href="/why-convert-to-jpg.html" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
+              {t('nav.whyConvert')}
             </a>
+            <a href="/png-vs-jpg.html" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
+              {t('nav.pngVsJpg')}
+            </a>
+            <Link href="/about" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
+              {t('about.title')}
+            </Link>
           </nav>
           
           <div className="flex items-center space-x-2">
@@ -74,7 +80,7 @@ export default function Header() {
             </Button>
 
             {/* Mobile Menu */}
-            <button className="md:hidden p-2 text-gray-600 dark:text-gray-300 hover:text-primary-custom">
+            <button className="lg:hidden p-2 text-gray-600 dark:text-gray-300 hover:text-primary-custom">
               <i className="fas fa-bars text-xl"></i>
             </button>
           </div>
