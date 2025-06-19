@@ -169,6 +169,64 @@ export default function Home() {
           </div>
         )}
 
+        {/* JPG Tool Introduction Section */}
+        <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-8 my-12 transition-colors">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
+            <span className="text-2xl mr-3">📸</span>
+            {t('intro.title')}
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+            {t('intro.description')}
+          </p>
+          
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+            <span className="text-lg mr-2">🛠️</span>
+            {t('intro.howToUse')}
+          </h3>
+          <ol className="list-decimal list-inside text-gray-700 dark:text-gray-300 space-y-2 ml-4">
+            <li>{t('intro.step1')}</li>
+            <li>{t('intro.step2')}</li>
+            <li>{t('intro.step3')}</li>
+          </ol>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-8 my-12 transition-colors">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+            <span className="text-2xl mr-3">❓</span>
+            {t('faq.title')}
+          </h2>
+          
+          <div className="space-y-6">
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                {t('faq.q1')}
+              </h4>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                {t('faq.a1')}
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                {t('faq.q2')}
+              </h4>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                {t('faq.a2')}
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                {t('faq.q3')}
+              </h4>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                {t('faq.a3')}
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Features Section */}
         <div className="grid md:grid-cols-3 gap-6 mb-8 mt-12">
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6 text-center transition-colors">
