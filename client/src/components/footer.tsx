@@ -1,4 +1,5 @@
 import { useLanguage } from "@/contexts/language-context";
+import { Link } from "wouter";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -44,8 +45,8 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.help')}</a></li>
               <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.contact')}</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.privacy')}</a></li>
-              <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.terms')}</a></li>
+              <li><Link href="/privacy" className="hover:text-primary-custom transition-colors">{t('footer.privacy')}</Link></li>
+              <li><Link href="/terms" className="hover:text-primary-custom transition-colors">{t('footer.terms')}</Link></li>
             </ul>
           </div>
         </div>

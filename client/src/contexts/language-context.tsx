@@ -109,6 +109,36 @@ const translations = {
     "footer.privacy": "개인정보처리방침",
     "footer.terms": "이용약관",
     "footer.copyright": "© 2024 ImageConverter. All rights reserved.",
+    
+    // Privacy Policy
+    "privacy.title": "개인정보처리방침",
+    "privacy.intro": "본 사이트는 사용자 개인정보 보호를 최우선으로 생각합니다. 본 방침은 이미지 변환 서비스 이용과 관련하여 적용됩니다.",
+    "privacy.section1.title": "1. 개인정보 수집 항목",
+    "privacy.section1.content": "본 사이트는 어떠한 개인정보도 수집하지 않습니다.",
+    "privacy.section2.title": "2. 이미지 처리 및 저장",
+    "privacy.section2.content": "사용자가 업로드한 모든 이미지는 오직 브라우저 내에서만 처리되며, 서버에 저장되지 않습니다. 변환 후 이미지 파일은 즉시 다운로드되며 어떠한 기록도 남기지 않습니다.",
+    "privacy.section3.title": "3. 제3자 제공",
+    "privacy.section3.content": "본 사이트는 개인정보를 수집하지 않으며, 따라서 제3자에게 제공하지 않습니다.",
+    "privacy.section4.title": "4. 쿠키 및 추적 기술",
+    "privacy.section4.content": "쿠키, 웹 비콘, 트래킹 기술을 사용하지 않으며 광고 및 사용자 분석 목적의 도구도 사용하지 않습니다.",
+    "privacy.effectiveDate": "본 방침은 2024년 6월 19일부터 적용됩니다.",
+    
+    // Terms of Service
+    "terms.title": "이용약관",
+    "terms.intro": "본 약관은 이미지 변환 웹사이트(이하 \"사이트\")를 이용함에 있어 필요한 조건과 책임에 대해 규정합니다.",
+    "terms.section1.title": "1. 서비스 개요",
+    "terms.section1.content": "본 사이트는 사용자가 PNG, BMP, GIF, WEBP 등의 이미지 파일을 JPG 등으로 변환, 압축, 크기 조절, 자르기 등의 기능을 브라우저 상에서 수행할 수 있도록 돕는 서비스입니다.",
+    "terms.section2.title": "2. 이용자의 책임",
+    "terms.section2.item1": "사용자는 타인의 저작권, 초상권, 개인정보를 침해하지 않는 이미지만 업로드해야 합니다.",
+    "terms.section2.item2": "업로드된 이미지에 대한 모든 법적 책임은 사용자에게 있습니다.",
+    "terms.section3.title": "3. 금지 행위",
+    "terms.section3.item1": "불법 콘텐츠 포함 이미지 업로드",
+    "terms.section3.item2": "자동화된 방식으로 과도한 요청을 전송하는 행위",
+    "terms.section4.title": "4. 면책 조항",
+    "terms.section4.content": "본 사이트는 사용자 이미지 손상, 오작동, 또는 데이터 손실 등에 대해 법적 책임을 지지 않으며, 서비스는 \"있는 그대로\" 제공됩니다.",
+    "terms.section5.title": "5. 서비스 중단 및 변경",
+    "terms.section5.content": "운영자는 서비스의 일부 또는 전부를 사전 통지 없이 변경하거나 종료할 수 있습니다.",
+    "terms.effectiveDate": "본 약관은 2024년 6월 19일부터 적용됩니다.",
   },
   en: {
     // Header
@@ -210,6 +240,36 @@ const translations = {
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Service",
     "footer.copyright": "© 2024 ImageConverter. All rights reserved.",
+    
+    // Privacy Policy
+    "privacy.title": "Privacy Policy",
+    "privacy.intro": "This site prioritizes user privacy protection above all else. This policy applies to the use of image conversion services.",
+    "privacy.section1.title": "1. Personal Information Collection",
+    "privacy.section1.content": "This site does not collect any personal information.",
+    "privacy.section2.title": "2. Image Processing and Storage",
+    "privacy.section2.content": "All images uploaded by users are processed only within the browser and are not stored on servers. Image files are immediately downloaded after conversion and no records are kept.",
+    "privacy.section3.title": "3. Third Party Sharing",
+    "privacy.section3.content": "This site does not collect personal information and therefore does not share it with third parties.",
+    "privacy.section4.title": "4. Cookies and Tracking Technologies",
+    "privacy.section4.content": "We do not use cookies, web beacons, or tracking technologies, nor do we use tools for advertising or user analytics purposes.",
+    "privacy.effectiveDate": "This policy is effective from June 19, 2024.",
+    
+    // Terms of Service
+    "terms.title": "Terms of Service",
+    "terms.intro": "These terms stipulate the necessary conditions and responsibilities for using the image conversion website (hereinafter \"the site\").",
+    "terms.section1.title": "1. Service Overview",
+    "terms.section1.content": "This site provides services that help users perform functions such as converting image files like PNG, BMP, GIF, WEBP to JPG, compression, resizing, and cropping within the browser.",
+    "terms.section2.title": "2. User Responsibilities",
+    "terms.section2.item1": "Users must only upload images that do not infringe on others' copyrights, portrait rights, or personal information.",
+    "terms.section2.item2": "All legal responsibility for uploaded images lies with the user.",
+    "terms.section3.title": "3. Prohibited Activities",
+    "terms.section3.item1": "Uploading images containing illegal content",
+    "terms.section3.item2": "Sending excessive requests through automated means",
+    "terms.section4.title": "4. Disclaimer",
+    "terms.section4.content": "This site does not assume legal responsibility for user image damage, malfunctions, or data loss, and the service is provided \"as is\".",
+    "terms.section5.title": "5. Service Interruption and Changes",
+    "terms.section5.content": "The operator may change or terminate part or all of the service without prior notice.",
+    "terms.effectiveDate": "These terms are effective from June 19, 2024.",
   }
 };
 

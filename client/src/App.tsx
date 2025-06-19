@@ -9,6 +9,8 @@ import Home from "@/pages/home";
 import Compress from "@/pages/compress";
 import Resize from "@/pages/resize";
 import Crop from "@/pages/crop";
+import Privacy from "@/pages/privacy";
+import Terms from "@/pages/terms";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +20,8 @@ function Router() {
       <Route path="/compress" component={Compress} />
       <Route path="/resize" component={Resize} />
       <Route path="/crop" component={Crop} />
+      <Route path="/privacy" component={Privacy} />
+      <Route path="/terms" component={Terms} />
       <Route component={NotFound} />
     </Switch>
   );
