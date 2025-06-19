@@ -147,6 +147,15 @@ const translations = {
     "intro.step1": "파일을 업로드하거나 드래그 & 드롭합니다.",
     "intro.step2": "미리보기를 확인한 후 '변환' 버튼을 클릭합니다.",
     "intro.step3": "변환된 JPG 파일이 자동 다운로드 됩니다.",
+    
+    // FAQ Section
+    "faq.title": "자주 묻는 질문 (FAQ)",
+    "faq.q1": "Q. 업로드된 파일은 어디에 저장되나요?",
+    "faq.a1": "A. 모든 처리는 사용자 브라우저 내에서만 이루어지며, 서버에 파일이 전송되지 않습니다.",
+    "faq.q2": "Q. 파일 용량 제한이 있나요?",
+    "faq.a2": "A. 브라우저 성능에 따라 다르지만, 일반적으로 50MB 이하의 파일이 원활하게 처리됩니다.",
+    "faq.q3": "Q. 여러 이미지를 한꺼번에 변환할 수 있나요?",
+    "faq.a3": "A. 네, 다중 업로드 및 일괄 변환을 지원합니다.",
   },
   en: {
     // Header
@@ -286,6 +295,15 @@ const translations = {
     "intro.step1": "Upload files or drag & drop them.",
     "intro.step2": "Check the preview and click the 'Convert' button.",
     "intro.step3": "Converted JPG files will be automatically downloaded.",
+    
+    // FAQ Section
+    "faq.title": "Frequently Asked Questions (FAQ)",
+    "faq.q1": "Q. Where are uploaded files stored?",
+    "faq.a1": "A. All processing is done within your browser only, and files are not transmitted to servers.",
+    "faq.q2": "Q. Is there a file size limit?",
+    "faq.a2": "A. It depends on browser performance, but generally files under 50MB are processed smoothly.",
+    "faq.q3": "Q. Can I convert multiple images at once?",
+    "faq.a3": "A. Yes, we support multiple uploads and batch conversion.",
   }
 };
 
