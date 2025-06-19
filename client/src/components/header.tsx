@@ -35,10 +35,10 @@ export default function Header() {
             <Link href="/crop" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
               {t('header.crop')}
             </Link>
-            <a href="/why-convert-to-jpg.html" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
+            <a href="/why-convert-to-jpg.html" target="_blank" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
               {t('nav.whyConvert')}
             </a>
-            <a href="/png-vs-jpg.html" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
+            <a href="/png-vs-jpg.html" target="_blank" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
               {t('nav.pngVsJpg')}
             </a>
             <Link href="/about" className="text-gray-600 dark:text-gray-300 hover:text-primary-custom transition-colors text-sm">
