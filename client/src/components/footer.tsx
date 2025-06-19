@@ -22,7 +22,8 @@ export default function Footer() {
           
           <div>
             <h5 className="font-semibold text-gray-900 dark:text-white mb-3">{t('footer.conversionTools')}</h5>
-            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+            <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">  <h5 className="font-semibold text-gray-900 dark:text-white mb-3">{t('footer.guide')}</h5>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <li><Link href="/" className="hover:text-primary-custom transition-colors">{t('footer.jpgConvert')}</Link></li>
               <li><Link href="/" className="hover:text-primary-custom transition-colors">{t('footer.pngConvert')}</Link></li>
               <li><Link href="/" className="hover:text-primary-custom transition-colors">{t('footer.webpConvert')}</Link></li>
@@ -37,15 +38,6 @@ export default function Footer() {
               <li><Link href="/resize" className="hover:text-primary-custom transition-colors">{t('footer.resize')}</Link></li>
               <li><Link href="/crop" className="hover:text-primary-custom transition-colors">{t('footer.crop')}</Link></li>
               <li><a href="#" className="hover:text-primary-custom transition-colors">{t('footer.rotate')}</a></li>
-              div>
-                <h5 className="font-semibold text-gray-900 dark:text-white mb-3">{t('footer.guide')}</h5>
-                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                  <li><Link href="/compression-guide" className="hover:text-primary-custom transition-colors">{t('footer.imageCompression')}</Link></li>
-                  <li><Link href="/web-optimization" className="hover:text-primary-custom transition-colors">{t('footer.webOptimization')}</Link></li>
-                  <li><Link href="/png-vs-jpg" className="hover:text-primary-custom transition-colors">{t('footer.pngVsJpg')}</Link></li>
-                  <li><Link href="/why-convert-to-jpg" className="hover:text-primary-custom transition-colors">{t('footer.whyJpg')}</Link></li>
-                </ul>
-              </div>
             </ul>
           </div>
           
