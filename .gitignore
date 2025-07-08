@@ -1,6 +1,10 @@
 node_modules
 dist
 .DS_Store
-server/public
-vite.config.ts.*
 *.tar.gz
+
+# 서버 public 폴더 제외 여부는 상황에 따라 선택
+server/public
+
+# Vite 설정 파일 포함 (제외하지 않음)
+!vite.config.ts
